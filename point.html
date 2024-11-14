@@ -1,91 +1,122 @@
-<a href="index.html">
-    <button>back</button>
-  </a>
-  
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Columns Page</title>
+    <title>Technology Overview</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
         }
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+            width: 80%;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
         }
-        .row {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
+        .box {
+            background-color: #e0e0e0;
+            padding: 15px;
+            text-align: center;
+            border-radius: 4px;
         }
-        .row.single-column {
-            flex-direction: row;
-            justify-content: flex-start;
+        .wide {
+            grid-column: span 3;
         }
-        .row.single-column .column {
-            width: 100%;
+        .double {
+            grid-column: span 2;
         }
-        .column {
-            width: 30%;
+        .four-column-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 10px;
         }
-        .row.four-columns .column {
-            width: 22%;
+        .small-box {
+            background-color: #e0e0e0;
+            padding: 15px;
+            text-align: center;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        
-        <div class="row">
-            <div class="column">
-                <p><strong>Column 1:</strong> Artificial Intelligence (AI) is transforming industries worldwide. From healthcare to finance, AI enables machines to learn and make decisions, revolutionizing fields such as autonomous driving, personalized medicine, and smart home technology.</p>
-            </div>
-            <div class="column">
-                <p><strong>Column 2:</strong> Cloud computing provides scalable resources over the internet, allowing businesses and individuals to store and process data remotely. This technology enhances data accessibility, flexibility, and collaboration, making it crucial in modern digital infrastructure.</p>
-            </div>
-            <div class="column">
-                <p><strong>Column 3:</strong> Cybersecurity is an essential field as cyber threats continue to grow. Protecting sensitive data from attacks involves advanced techniques such as encryption, multi-factor authentication, and continuous monitoring to safeguard against unauthorized access.</p>
-            </div>
-        </div>
 
-        
-        <div class="row single-column">
-            <div class="column">
-                <p><strong>Column 1:</strong> The Internet of Things (IoT) connects everyday devices to the internet, allowing them to send and receive data. IoT has applications in smart cities, home automation, and industrial processes, enabling efficient and automated solutions.</p>
-            </div>
-        </div>
+<div class="container">
+    <!-- First Row -->
+    <div class="box wide">Technology advances rapidly.</div>
 
-        
-        <div class="row four-columns">
-            <div class="column">
-                <p><strong>Column 1:</strong> Blockchain technology is widely known for its role in cryptocurrencies, but it also offers secure, decentralized data management for various applications, including supply chain transparency and digital identity verification.</p>
-            </div>
-            <div class="column">
-                <p><strong>Column 2:</strong> Quantum computing aims to solve complex problems much faster than traditional computers. By using quantum bits, or qubits, quantum computers could revolutionize fields like cryptography, material science, and complex simulations.</p>
-            </div>
-            <div class="column">
-                <p><strong>Column 3:</strong> Augmented Reality (AR) and Virtual Reality (VR) are reshaping industries like gaming, education, and training by providing immersive experiences that enhance learning and entertainment through interactive simulations.</p>
-            </div>
-            <div class="column">
-                <p><strong>Column 4:</strong> 5G technology brings faster, more reliable internet connections, which is essential for real-time applications like remote surgery, autonomous vehicles, and enhanced mobile experiences in urban and rural areas.</p>
-            </div>
-        </div>
+    <!-- Second Row -->
+    <div class="box wide">AI transforms industries.</div>
 
-        
-        <div class="row">
-            <div class="column">
-                <p><strong>Column 1:</strong> Machine learning, a subset of AI, allows computers to analyze data patterns and make predictions. It powers recommendation systems, fraud detection, and predictive maintenance, making data-driven decisions more efficient.</p>
-            </div>
-            <div class="column">
-                <p><strong>Column 2:</strong> Edge computing reduces latency by processing data closer to its source. This technology is critical for real-time applications like autonomous driving, industrial automation, and smart city infrastructure.</p>
-            </div>
-        </div>
-    </div>
+    <!-- Third Row (Updated to have identical text) -->
+    <div class="box wide">Cybersecurity is essential for all industries.</div>
+
+    <!-- Fourth Row (Updated to have identical text) -->
+    <div class="box double">Cloud storage is scalable and secure.</div>
+    <div class="box">Cloud storage is scalable and secure.</div>
+
+    <!-- Fifth Row -->
+    <div class="box double">Machine learning improves analysis.</div>
+    <div class="box">Networks connect people.</div>
+
+    <!-- Sixth Row (Updated to have identical text) -->
+    <div class="box double">Software enhances productivity worldwide.</div>
+    <div class="box">Software enhances productivity worldwide.</div>
+
+    <!-- Seventh Row -->
+    <div class="box">Tech shapes the future.</div>
+    <div class="box">Data science is powerful.</div>
+    <div class="box">Cloud services expand.</div>
+
+    <!-- Eighth Row -->
+    <div class="box">Tech shapes the future.</div>
+    <div class="box">Data science is powerful.</div>
+    <div class="box">Cloud services expand.</div>
+
+    <!-- Ninth Row -->
+    <div class="box">Tech shapes the future.</div>
+    <div class="box">Data science is powerful.</div>
+    <div class="box">Cloud services expand.</div>
+</div>
+
+<!-- Tenth Row with 4 Text Boxes -->
+<div class="four-column-row">
+    <div class="small-box">AI revolutionizes tasks.</div>
+    <div class="small-box">Data fuels growth.</div>
+    <div class="small-box">Cloud enables access.</div>
+    <div class="small-box">Security is vital.</div>
+</div>
+
+<!-- Eleventh Row with 4 Text Boxes -->
+<div class="four-column-row">
+    <div class="small-box">Networks build connections.</div>
+    <div class="small-box">Software powers tools.</div>
+    <div class="small-box">Hardware supports tasks.</div>
+    <div class="small-box">Innovation drives change.</div>
+</div>
+
+<!-- Twelfth Row with 4 Text Boxes -->
+<div class="four-column-row">
+    <div class="small-box">AI redefines industries.</div>
+    <div class="small-box">Data transforms decisions.</div>
+    <div class="small-box">Cloud ensures scalability.</div>
+    <div class="small-box">Security protects assets.</div>
+</div>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
